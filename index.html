@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glorious Kiddies Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="Glorious-Kiddies-Logo.jpg" alt="Glorious Kiddies Book Store Logo">
+                    Glorious Kiddies Bookstore
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#library">Library</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-books">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover the Magic of Reading</h1>
+                <p>Explore our collection of enchanting children's books that spark imagination and foster a love for reading. Available online and in our cozy bookstores.</p>
+                <div class="hero-buttons">
+                    <a href="#library" class="btn">Browse Books</a>
+                    <a href="#locations" class="btn btn-secondary">Find a Store</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Curated Collection</h3>
+                    <p>We carefully select books that are educational, entertaining, and 
+                        appropriate for each age group.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-audio-description"></i>
+                    </div>
+                    <h3>Audio Books</h3>
+                    <p>Many of our books come with audio versions to help children follow 
+                        along and improve reading skills.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Interactive Stores</h3>
+                    <p>Our physical locations feature reading nooks, storytime events, and 
+                        interactive book displays.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gift Packages</h3>
+                    <p>Beautifully wrapped book bundles perfect for birthdays, holidays, and special occasions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section class="library" id="library">
+        <div class="container">
+            <h2 class="section-title">Our Book Library</h2>
+            <div class="book-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="age-0-3">Ages 0-3</button>
+                <button class="filter-btn" data-filter="age-4-6">Ages 4-6</button>
+                <button class="filter-btn" data-filter="age-7-9">Ages 7-9</button>
+                <button class="filter-btn" data-filter="age-10-12">Ages 10-12</button>
+            </div>
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book-card" data-category="age-0-3">
+                    <div class="book-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/5/51/Goodnightmoon.jpg');"></div>
+                    <div class="book-age">0-3</div>
+                    <div class="book-info">
+                        <h3>Goodnight Moon</h3>
+                        <p>Margaret Wise Brown</p>
+                        <p class="book-price">$8.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="book-card" data-category="age-4-6">
+                    <div class="book-image" style="background-image: url('https://www.telegraph.co.uk/multimedia/archive/01369/EricCarle_1369848c.jpg');"></div>
+                    <div class="book-age">4-6</div>
+                    <div class="book-info">
+                        <h3>The Very Hungry Caterpillar</h3>
+                        <p>Eric Carle</p>
+                        <p class="book-price">$10.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="book-card" data-category="age-7-9">
+                    <div class="book-image" style="background-image: url('https://target.scene7.com/is/image/Target/GUEST_73a571f6-6e80-40c9-af7d-d6e21da78de8');"></div>
+                    <div class="book-age">7-9</div>
+                    <div class="book-info">
+                        <h3>Charlotte's Web</h3>
+                        <p>E.B. White</p>
+                        <p class="book-price">$12.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 4 -->
+                <div class="book-card" data-category="age-10-12">
+                    <div class="book-image" style="background-image: url('https://www.publishersweekly.com/cover/9780807281758');"></div>
+                    <div class="book-age">10-12</div>
+                    <div class="book-info">
+                        <h3>Harry Potter and the Sorcerer's Stone</h3>
+                        <p>J.K. Rowling</p>
+                        <p class="book-price">$14.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 5 -->
+                <div class="book-card" data-category="age-4-6">
+                    <div class="book-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/8/8d/Where_The_Wild_Things_Are_%28book%29_cover.jpg');"></div>
+                    <div class="book-age">4-6</div>
+                    <div class="book-info">
+                        <h3>Where the Wild Things Are</h3>
+                        <p>Maurice Sendak</p>
+                        <p class="book-price">$9.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 6 -->
+                <div class="book-card" data-category="age-7-9">
+                    <div class="book-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNu36eu0DshACDPRoZCNLz55uwo0660T0jA&s');"></div>
+                    <div class="book-age">7-9</div>
+                    <div class="book-info">
+                        <h3>Matilda</h3>
+                        <p>Roald Dahl</p>
+                        <p class="book-price">$11.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 7 -->
+                <div class="book-card" data-category="age-10-12">
+                    <div class="book-image" style="background-image: url('https://cdn.kobo.com/book-images/da22b4fe-92b7-4ae1-a128-19103a99dca1/1200/1200/False/gulliver-s-travels-220.jpg');"></div>
+                    <div class="book-age">10-12</div>
+                    <div class="book-info">
+                        <h3>Gulliver's Travels</h3>
+                        <p>Jonathan Swift</p>
+                        <p class="book-price">$10.50</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Book 8 -->
+                <div class="book-card" data-category="age-10-12">
+                    <div class="book-image" style="background-image: url('https://www.nobleobjects.com/cdn/shop/articles/OliverTwistcover_1_73e9da91-5139-41ed-9c33-36a9238c117c-597609.jpg?v=1605747668');"></div>
+                    <div class="book-age">10-12</div>
+                    <div class="book-info">
+                        <h3>Oliver Twist</h3>
+                        <p>Charles Dickens</p>
+                        <p class="book-price">$9.99</p>
+                        <audio controls class="audio-preview">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Parents Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>My son looks forward to our weekly visits to Glorious Kiddies Bookstore. The staff is wonderful at recommending books that match his interests 
+                            and reading level.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://cdn.pixabay.com/photo/2024/07/09/13/48/woman-8883594_640.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Hailey James</h4>
+                            <p>Mother of Robert, age 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The audio book feature has been a game changer for my kids, as they used to struggle with reading. My son can follow along and his confidence has 
+                            improved dramatically. My daughter has grown into the habit of reading, her vocabulary is also improving.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://media.istockphoto.com/id/173272751/photo/close-up-of-smiling-young-dark-skinned-man.jpg?s=612x612&w=0&k=20&c=_P4J_nezQaAQQh5vHFa5DFmPPcl9dpEX1kvsBhRpdP4=');"></div>
+                        <div class="author-info">
+                            <h4>Aidelokhai Ileogben</h4>
+                            <p>Father of 2, age 8 and 6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I love the monthly book subscription! It takes the guesswork out of finding quality books for my twins. The themed packages are always a hit.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://cdn.pixabay.com/photo/2019/12/26/08/22/girl-4719899_640.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Katie Mensah</h4>
+                            <p>Mother of Julie & Jonathan, age 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <h2 class="section-title">Our Stores</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image" style="background-image: url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="location-info">
+                        <h3>Downtown</h3>
+                        <p>123 Benkitt Potter Street, Bucknor City, Port Harcourt, Rivers State, Nigeria</p>
+                        <p>Mon-Sat: 9am - 7pm<br>Sun: 10am - 5pm</p>
+                        <a href="#contact" class="btn">Visit Store</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image" style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="location-info">
+                        <h3>Westside</h3>
+                        <p>45 Francis Benneth Ave, Liberty Blossom Estate, Lagos State, Nigeria</p>
+                        <p>Mon-Sat: 9am - 8pm<br>Sun: 11am - 6pm</p>
+                        <a href="#contact" class="btn">Visit Store</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image" style="background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="location-info">
+                        <h3>Eastside</h3>
+                        <p>9 Animosity Way, Viola Town, East Legon, Accra, Ghana</p>
+                        <p>Mon-Sat: 9:30am - 7:30pm<br>Sun: 12pm - 5pm</p>
+                        <a href="#contact" class="btn">Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="contact">
+        <div class="container">
+            <h2>Join Our Reading Club</h2>
+            <p>Subscribe to our newsletter for book recommendations, store events, and exclusive discounts.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+<section class="contact-form-section" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Have questions or special requests? We'd love to hear from you!</p>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 45 Francis Benneth Ave, Liberty Blossom Estate, Lagos State, Nigeria</li>
+                    <li><i class="fas fa-phone"></i> (234) 800 223-4567</li>
+                    <li><i class="fas fa-envelope"></i> enquiries.books@gloriouskiddies.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9am-8pm, Sun: 10am-5pm</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/gloriouskiddiesbookstore"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/@gloriouskiddiesbooks"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/@gloriouskiddiesbooks"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/gloriouskiddiesbookstore"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <div class="error-message" id="subjectError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <div class="success-message" id="formSuccess"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Glorious Kiddies</h3>
+                    <p>Sparkling young minds through the magic of books since 2013.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/gloriouskiddiesbookstore"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/@gloriouskiddiesbooks"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/@gloriouskiddiesbooks"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/gloriouskiddiesbookstore"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#library">Book Library</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#locations">Store Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#features">FAQs</a></li>
+                        <li><a href="#library">Shipping & Returns</a></li>
+                        <li><a href="#library">Privacy Policy</a></li>
+                        <li><a href="#home">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 45 Francis Benneth Ave, Liberty Blossom Estate, Lagos State, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> (234) 800 223-4567</li>
+                        <li><i class="fas fa-envelope"></i> enquiries.books@gloriouskiddies.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2022 Glorious Kiddies Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
